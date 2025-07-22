@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ltbb - Learn to be better</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="index.tsx"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="background-decor" aria-hidden="true">
+        <span>📖</span><span>💡</span><span>📈</span><span>🧠</span><span>✨</span><span>🖋️</span>
+    </div>
+    <div id="overlay"></div>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link"><h1 class="logo">Ltbb</h1></a>
+            <nav class="desktop-nav">
+                <a href="#about">Über Mich</a>
+                <a href="#pricing">Preise</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Menü schließen">&times;</button>
+        <nav>
+            <a href="#about">Über Mich</a>
+            <a href="#pricing">Preise</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button id="open-ltbb-modal-btn" class="btn-subtle">Was ist Ltbb?</button>
+        </div>
+    </aside>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Beginne jetzt, es zahlt sich aus!</h2>
+                <p>Gib immer dein Bestes!</p>
+                <a href="#pricing" class="btn btn-primary">Preise ansehen</a>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="Zum Inhalt scrollen"></a>
+        </section>
+        
+        <div class="section-divider"></div>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Über Mich</h2>
+                <p class="section-subtitle">Ich bin ein leidenschaftlicher Programmierer und Schüler, der es liebt, sein Wissen zu teilen und anderen zu helfen, ihre Ziele zu erreichen. Mit Fokus auf Konzentration, Design und Effektivität helfe ich Schülern, nicht nur besser zu werden, sondern auch Spaß am Lernen zu haben.</p>
+                <div class="about-cta">
+                     <a href="about.html" class="btn btn-primary">Mehr über mich erfahren</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Preis pro Nachhilfestunde</h2>
+                <p class="section-subtitle">Der perfekte Preis für die perfekte Stunde</p>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <p class="price">14€<span>/Stunde</span></p>
+                        <ul>
+                            <li>✔️ 45 Minuten</li>
+                            <li class="disabled">❌ Ohne Online Hilfe</li>
+                            <li class="disabled">❌ Nicht für Hilfe erreichbar</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Anfragen</a>
+                    </div>
+                    <div class="pricing-card recommended">
+                        <div class="popular-badge">Beliebt</div>
+                        <h3>Pro</h3>
+                        <p class="price">19€<span>/Stunde</span></p>
+                         <ul>
+                            <li>✔️ 45 Minuten</li>
+                            <li>✔️ 1 Lernplan</li>
+                            <li>✔️ Mit Online Hilfe</li>
+                            <li>✔️ Erreichbar Mo-Fr</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Anfragen</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <p class="price">24€<span>/Stunde</span></p>
+                         <ul>
+                            <li>✔️ 60 Minuten</li>
+                            <li>✔️ 3 Lernpläne</li>
+                            <li>✔️ Angepasste Lernzielkontrollen</li>
+                            <li>✔️ Mit Online Hilfe</li>
+                            <li>✔️ Erreichbar Mo-So</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Anfragen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="section-title">Was Schüler über meine Hilfe sagen</h2>
+                <div class="reviews-slider-container">
+                    <button id="prev-review" class="review-nav-btn prev" aria-label="Vorherige Rezension">‹</button>
+                    <div class="reviews-slider-wrapper">
+                        <div class="reviews-slider-track">
+                            <div class="review-card">
+                                <p class="review-text">Es hat sehr geholfen, ich verstehe endlich Mathe!!! Danke!</p>
+                                <p class="review-author">Schülerin</p>
+                            </div>
+                            <div class="review-card">
+                                <p class="review-text">Es hat meinem Sohn sehr geholfen, er hat die Themen besser verstanden und gut vorgearbeitet.</p>
+                                <p class="review-author">Mutter eines Schülers</p>
+                            </div>
+                            <div class="review-card">
+                                <p class="review-text">Es macht viel mehr Spaß für die Schule zu lernen, ich hab jemandem, dem ich zeigen kann, was ich kann!</p>
+                                <p class="review-author">Schüler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-review" class="review-nav-btn next" aria-label="Nächste Rezension">›</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">So erreichen Sie mich!</h2>
+                <p class="section-subtitle">Wenn Sie mit mir in Kontakt treten möchten, erreichen Sie mich ganz einfach über die unten angegebenen Informationen. Ich freue mich auf Ihre Nachricht!</p>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-icon">📍</span>
+                        <h4>Standort</h4>
+                        <p>Bad Salzuflen, Deutschland</p>
+                    </div>
+                     <div class="contact-card">
+                        <span class="contact-icon">📞</span>
+                        <h4>Telefon</h4>
+                        <a href="tel:01788055574">0178 8055574</a>
+                    </div>
+                     <div class="contact-card">
+                        <span class="contact-icon">📧</span>
+                        <h4>Email</h4>
+                        <a href="mailto:beckerbenjamin2010@gmail.com">beckerbenjamin2010@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Ltbb - Learn to be better. Alle Rechte vorbehalten.</p>
+            <p class="footer-note">Diese Website wurde von mir programmiert. P.S. Hat voll Spaß gemacht, die zu machen :)</p>
+        </div>
+    </footer>
+
+    <div id="ltbb-modal-overlay" class="modal-overlay hidden"></div>
+    <div id="ltbb-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Schließen">&times;</button>
+        <h3 id="modal-title" class="modal-title">Was ist Ltbb?</h3>
+        <p>Ltbb ist die Abkürzung für 'Learn-to-be-better'. Das ist der Name für mein kleines Nachhilfegeschäft. Hier lernst du nicht nur für die Schule, sondern erwirbst Lernmethoden und Wissen, die dir im ganzen Leben helfen, neue Dinge schneller zu verstehen und anzuwenden.</p>
+    </div>
+
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
