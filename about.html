@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich - Ltbb</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay"></div>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">
+                    <span class="logo-short">Ltbb</span>
+                    <span class="logo-long">Ltbb - Learn to be better</span>
+                </h1>
+            </a>
+            <nav class="desktop-nav">
+                <a href="index.html#about">Über Mich</a>
+                <a href="index.html#how-i-help">Wie ich helfe</a>
+                <a href="index.html#reviews">Reviews</a>
+                <a href="index.html#pricing">Preise</a>
+                <a href="index.html#contact">Kontakt</a>
+            </nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Menü schließen">×</button>
+        <nav>
+            <a href="index.html#about">Über Mich</a>
+            <a href="index.html#how-i-help">Wie ich helfe</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#pricing">Preise</a>
+            <a href="index.html#contact">Kontakt</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button id="open-ltbb-modal-btn" class="btn-subtle">Was ist Ltbb?</button>
+        </div>
+    </aside>
+
+    <main>
+        <section id="about-details" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Über Mich im Detail</h2>
+                <p class="section-subtitle">Hier finden Sie detaillierte Informationen über meine Arbeitsweise, meine Hobbys und was mich antreibt, immer mein Bestes zu geben.</p>
+                <div class="about-container">
+                    <div class="about-column">
+                        <h3>Das Wichtigste</h3>
+                        <div class="about-card">
+                            <h4>👨‍💻 Arbeit</h4>
+                            <p>Ich programmiere leidenschaftlich gerne – egal ob Webseiten wie diese hier, kleine Tools oder KI-Projekte. In der Schule bin ich engagiert und helfe auch anderen, wenn ich kann.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>🎮 Hobbys</h4>
+                            <p>Ich liebe es, neue Dinge zu lernen – besonders in Richtung Tech, KI oder einfach Sachen, die mich weiterbringen. Wenn ich programmiere oder was Neues ausprobiere, bin ich voll drin.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>💡 Hilfe</h4>
+                            <p>Wenn du was nicht checkst oder Unterstützung brauchst – einfach schreiben! Ich bin meistens schnell erreichbar und geb mir Mühe, verständlich zu helfen. Viele haben dadurch echt Fortschritte gemacht.</p>
+                        </div>
+                    </div>
+                    <div class="about-column">
+                        <h3>Weitere Infos über mich</h3>
+                        <div class="about-card">
+                            <h4>🏆 Zielstrebigkeit</h4>
+                            <p>Wenn ich mir was vornehme, zieh ich’s durch – egal wie anstrengend. Ich glaub daran, dass man mit klaren Zielen, Neugier und Arbeit alles lernen kann. Das sieht man auch an meinen Projekten und Noten.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>🏃‍♂️ Bewegung</h4>
+                            <p>Ich sitz nicht nur vorm PC – ich trainiere auch regelmäßig, weil ich fit bleiben und meine Ziele auch körperlich erreichen will. Fokus ist wichtig – nicht nur im Kopf.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>🚀 Technologie</h4>
+                            <p>Ich liebe moderne Technologie, besonders KI. Mich fasziniert, was damit möglich ist – und ich will nicht nur Nutzer sein, sondern jemand, der mitgestaltet. Deswegen experimentiere ich viel mit neuen Tools und Programmiersprachen.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="about-cta" style="margin-top: 2rem;">
+                    <a href="index.html" class="btn btn-secondary">Zurück zur Startseite</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Ltbb - Learn to be better. Alle Rechte vorbehalten.</p>
+            <p class="footer-note">Diese Website wurde von mir programmiert. P.S. Hat voll Spaß gemacht, die zu machen :)</p>
+        </div>
+    </footer>
+    
+    <div id="ltbb-modal-overlay" class="modal-overlay hidden"></div>
+    <div id="ltbb-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Schließen">×</button>
+        <h3 id="modal-title" class="modal-title">Was ist Ltbb?</h3>
+        <p>Ltbb ist die Abkürzung für 'Learn-to-be-better'. Das ist der Name für mein kleines Nachhilfegeschäft. Hier lernst du nicht nur für die Schule, sondern erwirbst Lernmethoden und Wissen, die dir im ganzen Leben helfen, neue Dinge schneller zu verstehen und anzuwenden.</p>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
